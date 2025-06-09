@@ -8,6 +8,7 @@ public interface BookRepository {
     Book save(Book book);
     Optional<Book> findById(Long id);
     List<Book> findAll();
+    List<Book> findBookByrating(Double rating);
     void delete(Long id);
     Optional<Book> findByIsbn(String isbn);
 } 
